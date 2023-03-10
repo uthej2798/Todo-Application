@@ -1,0 +1,33 @@
+### GET TODOLIST BY STATUS AS "TO DO"
+
+GET http://localhost:3000/todos/?status=TO%20DO
+
+### GET TODO BY ID
+
+GET http://localhost:3000/todos/10
+
+
+### CREATE TODO
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+    "todo":  "Post Letter",
+    "priority": "MEDIUM",
+    "status": "DONE"
+  }
+
+
+### CHANGE TODO_DETAILS
+
+PUT http://localhost:3000/todos/6
+Content-Type: application/json
+
+{
+    "todo": "Read SC-FI Book"
+}
+
+
+### DELETE TODO BY ID
+
+DELETE http://localhost:3000/todos/9
